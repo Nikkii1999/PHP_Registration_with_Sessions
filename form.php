@@ -17,7 +17,7 @@
   <body>
     <div class="container-fluid">
       <h2 class="h"><u>Registration </h2></u>
-      <form method="post" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
+      <form method="POST" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" novalidate> 
         <div class="form-group box">
           <p>
             <div class="row">
@@ -52,7 +52,7 @@
             <div class="row">
               <label  class="col-sm-2 col-form-label">Phone Number</label>
               <div class="col-sm-6">
-                <input type="tel" class="form-control"name="mobile" pattern="[0-9]{10}" required>
+                <input type="tel" class="form-control"name="contact" pattern="[0-9]{10}" required>
               </div>
             </div>
           </p>
@@ -113,7 +113,7 @@
             <div class="row">
               <label  class="col-sm-2 col-form-label">Interest Area</label>
               <div class="col-sm-6">
-                <select class="selectpicker" name ="interest[]" multiple data-live-search="true">
+                <select class="selectpicker" name ="interests[]" multiple data-live-search="true">
                     <option value="Sports">Sports</option>
                     <option >Social Service</option>
                     <option >Dance</option>
@@ -125,7 +125,7 @@
           <div class="row">
             <label  class="col-sm-2 col-form-label">Professional Links</label>
             <div class="col-sm-6">
-                <input type="text" class="form-control"name="links"><span class = "error"><?php echo $websiteErr;?></span>
+                <input type="text" class="form-control"name="links"><span class = "error"><?php echo $linkErr;?></span>
             </div>
           </div>
           <button class="btn btn-primary" type="submit" name="submit" value="Submit"> Submit </button>

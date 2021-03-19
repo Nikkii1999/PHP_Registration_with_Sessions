@@ -1,0 +1,22 @@
+para{
+    padding: 10px;
+}
+.error {
+    color: #FF0000;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: cursive;
+}
+.box{
+    align-self: center;
+    background-color: darkgrey;
+    padding:2%;
+    color:black;
+    font-weight: 10px;
+    font-family: cursive;
+}
+.h{
+    text-align: center;
+}

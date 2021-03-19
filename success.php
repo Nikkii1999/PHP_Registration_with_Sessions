@@ -12,15 +12,29 @@ session_start();
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background-color: grey;
+            font-family: cursive;
+        }    
+        .card{
+            border: solid;
+            background-color: skyblue;
+
+        }
+        .image{
+            border: solid;
+        }
+    </style>
 
 </head>
 
 <body>
 
-    <div class="card container p-4 my-5">
+    <div class="card container p-4 my-5 ">
         <h2 class="text-center p-2 mx-5">Form successfully Submitted</h2>
         <h2 class="text-center p-2 mx-5">Thank You</h2>
-        <img class="m-2" src="<?php echo $_SESSION["image"] ?>" alt="" />
+        <p><img  height= 200px width =200px class="image" src="<?php echo $_SESSION["image"] ?>" alt="" /></p>
         <p>Name: <?php echo $_SESSION["name"] ?></p>
         <p>DOB: <?php echo $_SESSION["dob"] ?></p>
         <p>Gender: <?php echo $_SESSION["gender"] ?></p>
